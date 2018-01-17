@@ -1,0 +1,154 @@
+/*
+Theme Name:  Summer Blue
+Author:  Robert Bradford
+
+Description:  WordPress Theme for Summer Blue Pools
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+html {
+  font-family: 'Raleway', sans-serif;
+}
+body {
+  /* background: url('images/bg-pool-dog.jpg'); */
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  -moz-background-size: cover !important;
+  -webkit-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#9dd0fe, #003d7d); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#9dd0fe, #003d7d); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#9dd0fe, #003d7d); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#9dd0fe, #003d7d); /* Standard syntax */
+}
+#page-content {
+  color: #fff;
+  text-shadow: 1px 1px #003d7d;
+  font-size: 1.1em;
+}
+body#home {
+    position: relative;
+    z-index: 0;
+}
+.navbar-clear {
+
+}
+.navbar-nav {
+	text-align:center;
+}
+.navbar-nav>li>a {
+    font-size: 1.6em;
+	text-shadow: 2px 3px #003d7d;
+}
+.navbar-clear a {
+  color: #fff;
+}
+.navbar-clear a:hover {
+  /* color: #0000ff;
+  font-size: 1.2em; */
+}
+.navbar-clear .nav>li>a:focus, .nav>li>a:hover {
+  color: #0000ff;
+  font-size: 1.2em;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.navbar-toggle .icon-bar {
+  background:#fff;
+}
+.logo {
+  -webkit-filter: drop-shadow(1px 1px 3px #efeded);
+  filter: drop-shadow(1px 1px 3px #efeded);
+}
+@media (max-width:900px) {
+	.logo {
+		height: 50px;
+		-webkit-filter: drop-shadow(2px 2px 5px #000);
+		filter: drop-shadow(2px 2px 5px #000);
+	}
+}
+#page {
+    position: relative;
+    margin: 30px auto;
+    overflow: hidden;
+}
+#splash-message {
+  font-family: 'Nunito', sans-serif;
+}
+#splash-message .hero-message {
+  color:#fff;
+  font-size:52px;
+  float:left;
+  text-shadow: 2px 3px #003d7d;
+}
+#splash-message .squire-message {
+  color:#fff;
+  font-size:44px;
+  float:right;
+  text-shadow: 2px 3px #003d7d;
+}
+@media (max-width:900px) {
+	#splash-message .hero-message {
+	  font-size:36px;
+	}
+	#splash-message .squire-message {
+	  font-size:28px;
+	}
+}
+#faux-footer {
+
+  bottom:50px;
+  left:0;
+  z-index: 1;
+  width:100%;
+  background: url(images/faux-footer-bg.png);
+  color: #fff;
+  padding: 20px 0px;
+}
+@media (min-width:1025px) {
+	.faux-home {
+	  position:absolute;
+	}
+}
+
+#faux-footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#faux-footer ul li {
+    font-size: 1.25em;
+    border-top: 1px solid #aeaeae;
+}
+#faux-footer ul li a {
+  color:#d2d2d2;
+}
+#faux-footer ul li a:hover {
+  color:#fff;
+  text-decoration: none;
+}
+#faux-social a {
+  font-size: 30px;
+  color: #fff;
+  padding: 5px;
+}
+.page-hero {
+  margin-top:-100px;
+  padding-top:200px;
+  padding-bottom: 100px;
+  min-height:400px;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  -moz-background-size: cover !important;
+  -webkit-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  color:#fff;
+  font-size:52px;
+  text-shadow: 2px 3px #003d7d;
+  text-align: right;
+}
