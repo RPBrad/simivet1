@@ -23,13 +23,6 @@ $(function () {
     body.css('background', backgrounds[0]);
 });
 
-// $(function() {
-//   var eTop = $('#faux-footer').offset().top;
-//   console.log(eTop);
-//   var heroTop = ((eTop - 200) / 2);
-//   console.log(heroTop);
-//   $('#splash-message').css('margin-top', heroTop);
-// });
 </script>
 <div id="page">
   <div class="container">
@@ -49,10 +42,10 @@ $(function () {
 <div id="faux-footer" class="faux-home">
   <div class="container">
 	<div class="col-sm-9 col-xs-12 pull-right">
-      <h2>AT SUMMER BLUE, WE WORK FOR YOU...</h2>
-      <p>
-        Summer Blue Pool Services is a true full service pool company.  With services in cleaning and maintenance specifically tailored to your pool, you can rest assured that your water will be perfect.  Our chemical and cleaning packages are unique in that we do not charge a flat fee for every pool as every pool is truly different.  Some families swim more than others, some have direct sunlight all day and some use heaters to extend their swimming to year round.  All of these are variables that directly affect the chemicals in your pool.  Every visit we make to your pool ensures that your water will always be perfect and ready for you to enjoy your favorite backyard area. Why guess that your water levels are correct when you can always know your water is perfect with Summer Blue!
-      </p>
+  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+  <p><?php the_content(); ?></p>
+  <?php endwhile; else: ?>
+  <p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>
     </div>
     <div class="col-sm-3 col-xs-12 text-center">
       <div id="faux-social">
